@@ -3,6 +3,11 @@
 
   <div class="row">
     <div class="col-md-8">
+      {{/* We need to set $paginator here, else the number of items will not match up
+      Based on:
+      https://discuss.gohugo.io/t/different-page-types-without-organising-into-subdirectories/558/6
+      */}}
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
       {{ range .Paginator.Pages }}
       {{ .Render "li" }}
       {{ end }}
