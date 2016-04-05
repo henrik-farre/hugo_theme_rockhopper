@@ -12,6 +12,7 @@
   {{ range .Site.Params.stylesheets }}
     <link href="/css/{{ . }}" rel="stylesheet" />{{ end }}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+    <link rel="canonical" href="{{ .Permalink }}" />
 
     {{ if eq .URL "/" }}
     <title>{{ .Title }}</title>
