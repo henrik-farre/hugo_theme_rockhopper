@@ -3,7 +3,7 @@
   {{ range $key, $value := .Site.Taxonomies }}
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title"><i class="fa fa-{{ if eq $key "Categories" }}list{{ else }}tags{{ end }}"></i> {{ $key  }}</h2>
+      <h2 class="panel-title"><i class="fa fa-{{ if eq $key "Categories" }}list{{ else }}tags{{ end }}"></i> {{ title $key }}</h2>
     </div>
     <div class="list-group">
       {{ range first 10 $value.ByCount }}
