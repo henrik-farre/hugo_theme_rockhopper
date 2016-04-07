@@ -46,6 +46,10 @@ code:not(.hljs) {
   font-size: .8rem;
 }
 
+code {
+  color: #000
+}
+
 img {
   width: 100%;
 }
@@ -81,12 +85,14 @@ header.page-title {
 article.li .date {
   font-size: .8rem;
   line-height: 1rem;
+  color: #9d9d9d;
 }
 
 article.li .title {
   font-size: 1.4rem;
   line-height: 2rem;
   margin-bottom: .5rem;
+  margin-top: 0;
 }
 
 article.li .body {
@@ -238,8 +244,10 @@ footer.site p {
  *     color: #9d9d9d;
  * }
  */
-
-.panel-default > .panel-heading {
+.panel-inverse {
+    border-color: #ddd;
+}
+.panel-inverse > .panel-heading {
   background-color: #222;
   border-color: #222;
   color: #9d9d9d;
