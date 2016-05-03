@@ -216,6 +216,7 @@ footer.site {
   padding: 3rem 0;
 }
 
+footer.site a,
 footer.site p {
   font-size: .8rem;
   margin-bottom: .5rem;
