@@ -7,8 +7,7 @@
     {{ if (not (.Get "no_thumb")) }}
         {{ $thumb := (or (.Get "thumb") (.Get "src")) }}
         <img src="{{ $thumb }}"
-            class="{{ if (not (.Get "no_responsive")) }}img-responsive{{ end }}
-                {{ .Get "class" }}"
+            class="{{ .Get "class" }}"
             {{ with .Get "id" }}id="{{ . }}"{{ end }}
             {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
             {{ with .Get "width" }}width="{{ . }}"{{ end }}
