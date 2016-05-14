@@ -265,3 +265,8 @@ footer.site p {
   border-color: #222;
   color: #9d9d9d;
 }
+
+kbd {
+  background-color: #222;
+  color: #9d9d9d;
+}
