@@ -21,8 +21,15 @@ body {
 }
 
 a {
-  transition-duration: .2s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
   color: #000;
+}
+
+footer a,
+.tag {
+  font-size: .8rem;
+  color: #999;
 }
 
 a:hover,
@@ -31,15 +38,6 @@ a:active {
   color: #000;
   outline: none;
   box-shadow: none;
-}
-
-a.tag {
-  font-size: .8rem;
-  color: #999;
-}
-
-a.tag:hover {
-  color: #333;
 }
 
 code:not(.hljs) {
@@ -62,6 +60,10 @@ img {
   display: inline-block;
   color: #999;
   padding: 0 .5rem;
+}
+
+.share a:hover {
+  color: #000;
 }
 
 header.site nav.navbar {
@@ -212,14 +214,10 @@ article.single aside .section {
   margin-bottom: 2rem;
 }
 
-footer.site {
+footer {
   padding: 3rem 0;
-}
-
-footer.site a,
-footer.site p {
-  font-size: .8rem;
   margin-bottom: .5rem;
+  font-size: .8rem;
   color: #999;
 }
 
